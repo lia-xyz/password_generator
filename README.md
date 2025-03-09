@@ -18,12 +18,18 @@ This project contains two different C++ programs that generate passwords based o
 
 ## How to Run
 To compile either of the programs, use the following command: 
-`g++ -o password_generator password_generator.cpp`
+```
+g++ -o password_generator password_generator.cpp
+```
 To run the programs, use the following syntax: 
-`./password_generator -max_password_length -alphabet_length`
-**Example**
+```
+./password_generator -max_password_length -alphabet_length
+```
+### Example
 To generate passwords of lengths 1 to 3 using the first 5 letters of the alphabet (a, b, c, d, e):
-`./password_generator 3 5`
+```
+./password_generator 3 5
+```
 
 ## Example Output
 ```
@@ -50,8 +56,12 @@ If you do not provide the correct number of arguments, the program will display 
 The program will also ensure that:
 - Both arguments are positive integers.
 - The alphabet length does not exceed 26 (since there are only 26 letters in the alphabet).
-**Example Error Messages**
+### Example Error Messages
 If the number of arguments is incorrect:
-`Usage: ./password_generator.exe -max_password_length -alphabet_length`
+```
+Usage: ./password_generator.exe -max_password_length -alphabet_length
+```
 If invalid argument values are provided:
-`Error: Both values should be positive integers, and alphabet_length should not exceed 26`
+```
+Error: Both values should be positive integers, and alphabet_length should not exceed 26
+```
